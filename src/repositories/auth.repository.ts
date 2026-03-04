@@ -1,6 +1,5 @@
-import { PrismaClient, User, Role } from '@prisma/client';
-
-const prisma = new PrismaClient();
+import { User, Role } from '@prisma/client';
+import prisma from '../config/database';
 
 export class AuthRepository {
   async createUser(data: any): Promise<User> {
