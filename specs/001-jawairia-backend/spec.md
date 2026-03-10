@@ -48,6 +48,9 @@ Jawairia is a backend system built with Node.js, Express, PostgreSQL, and Redis,
 - Product details with Slug support.
 - Automated variant generation (Color x Size x Material).
 - Restock alerts for out-of-stock items.
+- **Reviews & Ratings**: User-submitted ratings (1-5 stars) and comments with moderation.
+- **SEO Optimization**: Custom Meta titles/descriptions for each product.
+- **Related Products**: Smart suggestion based on category and tags.
 
 ### 3. Cart & Orders
 - Guest and User carts with merging capability.

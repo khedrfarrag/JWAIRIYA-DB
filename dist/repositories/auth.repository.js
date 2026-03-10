@@ -15,5 +15,19 @@ class AuthRepository {
     async findById(id) {
         return database_1.default.user.findUnique({ where: { id } });
     }
+    async updateUser(id, data) {
+        return database_1.default.user.update({
+            where: { id },
+            data,
+        });
+    }
+    async findByResetToken(token) {
+        return database_1.default.user.findFirst({
+            where: {
+                passwordResetToken: token,
+                passwordResetExpires: { gt: new Date() },
+            },
+        });
+    }
 }
 exports.AuthRepository = AuthRepository;
